@@ -15,6 +15,7 @@ td {
 
 body {
   margin: 0;
+  color: #fff;
   padding: 0;
   background: linear-gradient(180deg, #1d2e8c 0%, #720d83 100%);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -346,4 +347,222 @@ address > p:not(:last-child) {
 .price-underlined {
   text-decoration: line-through;
   margin-right: 8px;
+}
+
+/**
+  |============================
+  | Business Card
+  |============================
+*/
+
+.section {
+  padding: 0 80px;
+  margin-bottom: 80px;
+}
+
+.title {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 28px;
+  color: #d2d2d2;
+}
+
+.section-info {
+  font-size: 20px;
+}
+
+#greeting {
+  margin-top: 40px;
+}
+
+.link[target] {
+  text-decoration: underline;
+}
+
+.link[target="_blank"]:visited {
+  color: #aaa;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service {
+  width: 200px;
+}
+
+.service p {
+  margin-bottom: 16px;
+}
+
+.service p ~ img {
+  filter: grayscale(80%);
+}
+
+.media-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.conclusion::selection {
+  text-shadow: #fc0 1px 0 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border-collapse: collapse;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  border-radius: 10px;
+  box-shadow: -9px 11px 20px -2px rgba(0, 0, 0, 0.75);
+  color: #000;
+}
+
+thead tr {
+  background-color: #009879;
+  color: #fff;
+  text-align: center;
+}
+
+th {
+  padding: 12px 15px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+tr {
+  background-color: #f3f3f3;
+  &:not(:last-child) {
+    border-bottom: 2px solid rgba(0, 43, 54, 0.2);
+  }
+  &:last-of-type {
+    border-bottom: 5px solid #009879;
+  }
+}
+
+td {
+  padding: 10px 8px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table caption {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.service-footer {
+  padding: 40px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.feedback-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.feedback-form label:not(.agree-label) {
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.feedback-form input:not(.agree-input),
+.feedback-form select {
+  display: block;
+  width: 100%;
+  border: 3px solid rgb(67, 63, 63);
+  outline: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: rgb(208, 200, 188);
+  border-radius: 4px;
+}
+
+.education-label {
+  color: #000;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.education-options {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+}
+
+textarea {
+  resize: none;
+  padding: 4px;
+}
+
+.agree-label {
+  display: flex;
+  gap: 8px;
+}
+
+.agree-text {
+  color: #000;
+  font-size: 16px;
+}
+
+.submit-form-btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: background-color 200ms, color 200ms;
+}
+
+.submit-form-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+}
+
+/**
+  |============================
+  | Animations
+  |============================
+*/
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }

@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <a href="/" class="nav-logo link">
@@ -29,73 +30,64 @@
     </header>
 
     <main>
-      <section id="greeting">
-        <h2>Вступ</h2>
-        <p>
-          Медіа-сервіси, подібні до <a target="_blank" href="https://megogo.net/ua">Megogo</a>,
-          <a target="_blank" href="https://www.netflix.com/ua/">Netflix</a>, Amazon Prime Video та інші, є важливими
-          компонентами сучасної розвинутої індустрії розваг і розваг. Ці платформи надають користувачам доступ до
-          величезного обсягу відеоконтенту, такого як фільми, серіали, документальні фільми, мультфільми, спортивні
+      <section class="section" id="greeting">
+        <h2 class="title">Вступ</h2>
+        <p class="section-info">
+          Медіа-сервіси, подібні до <a target="_blank" class="link" href="https://megogo.net/ua">Megogo</a>,
+          <a target="_blank" class="link" href="https://www.netflix.com/ua/">Netflix</a>, Amazon Prime Video та інші, є
+          важливими компонентами сучасної розвинутої індустрії розваг і розваг. Ці платформи надають користувачам доступ
+          до величезного обсягу відеоконтенту, такого як фільми, серіали, документальні фільми, мультфільми, спортивні
           події та інше, через Інтернет.
         </p>
       </section>
-      <section id="services">
-        <h2>Послуги, що надають медіа сервіси</h2>
-        <ol type="i">
-          <li>
-            <img
-              src="https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg"
-              width="420"
-              alt="live events" />
+      <section class="section" id="services">
+        <h2 class="title">Послуги, що надають медіа сервіси</h2>
+        <ol type="i" class="services-list">
+          <li class="service">
             <p>Події наживо</p>
+            <img src="https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg" alt="live events" />
           </li>
-          <li>
-            <img
-              src="https://cdn.pixabay.com/photo/2018/07/27/10/54/american-3565761_1280.jpg"
-              width="430"
-              alt="sport events" />
+          <li class="service">
             <p>Спортивні івенти</p>
+            <img src="https://cdn.pixabay.com/photo/2018/07/27/10/54/american-3565761_1280.jpg" alt="sport events" />
           </li>
-          <li>
-            <img
-              src="https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_1280.jpg"
-              width="440"
-              alt="movies" />
+          <li class="service">
             <p>Фільми</p>
+            <img src="https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_1280.jpg" alt="movies" />
           </li>
-          <li>
-            <img
-              src="https://cdn.pixabay.com/photo/2018/10/09/00/21/netflix-3733812_1280.jpg"
-              width="450"
-              alt="tv shows" />
+          <li class="service">
             <p>Серіали</p>
+            <img src="https://cdn.pixabay.com/photo/2018/10/09/00/21/netflix-3733812_1280.jpg" alt="tv shows" />
           </li>
         </ol>
       </section>
-      <article>
-        <h2>Що пропонують медіа-сервіси</h2>
-        <p>
-          Медіа-сервіси пропонують великий вибір контенту різних жанрів, включаючи фільми, серіали, документальні
-          фільми, мультфільми, музику та спортивні події. Ця різноманітність задовольняє інтереси різних груп аудиторії.
-        </p>
-        <em
-          >Медіа-сервіси використовують модель підписки, де користувачі щомісяця або щороку платять за необмежений
-          доступ до контенту. Існують також безкоштовні послуги з рекламою або обмеженим доступом до вмісту.</em
-        >
-        <u
-          >Завдяки використанню алгоритмів штучного інтелекту, медіа-сервіси можуть надавати користувачам
-          персоналізовані рекомендації щодо контенту, що відповідає їхнім інтересам і вподобанням.</u
-        >
-        <p>
-          Медіа-сервіси активно використовують дані про поведінку користувачів для аналізу і вдосконалення рекомендацій
-          та інших аспектів роботи платформи. Предметна область медіа-сервісів є динамічною та завжди в еволюції,
-          відкриваючи можливості для нових інновацій та технологій.
-        </p>
+      <article class="section">
+        <h2 class="title">Що пропонують медіа-сервіси</h2>
+        <div class="media-features">
+          <p class="section-info">
+            Медіа-сервіси пропонують великий вибір контенту різних жанрів, включаючи фільми, серіали, документальні
+            фільми, мультфільми, музику та спортивні події. Ця різноманітність задовольняє інтереси різних груп
+            аудиторії.
+          </p>
+          <em class="section-info"
+            >Медіа-сервіси використовують модель підписки, де користувачі щомісяця або щороку платять за необмежений
+            доступ до контенту. Існують також безкоштовні послуги з рекламою або обмеженим доступом до вмісту.</em
+          >
+          <u class="section-info"
+            >Завдяки використанню алгоритмів штучного інтелекту, медіа-сервіси можуть надавати користувачам
+            персоналізовані рекомендації щодо контенту, що відповідає їхнім інтересам і вподобанням.</u
+          >
+          <p class="section-info">
+            Медіа-сервіси активно використовують дані про поведінку користувачів для аналізу і вдосконалення
+            рекомендацій та інших аспектів роботи платформи. Предметна область медіа-сервісів є динамічною та завжди в
+            еволюції, відкриваючи можливості для нових інновацій та технологій.
+          </p>
+        </div>
       </article>
-      <section>
-        <h2>Порівняння різних медіа-сервісів</h2>
+      <section class="section">
+        <h2 class="title">Порівняння різних медіа-сервісів</h2>
         <table>
-          <caption>
+          <caption class="title">
             Services
           </caption>
           <tr>
@@ -142,9 +134,9 @@
           <tfoot></tfoot>
         </table>
       </section>
-      <section>
-        <h2>Висновок</h2>
-        <p>
+      <section class="section">
+        <h2 class="title">Висновок</h2>
+        <p class="section-info conclusion">
           Медіа-сервіси стали невід'ємною частиною нашого повсякденного життя. Завдяки їм ми маємо можливість отримувати
           доступ до різноманітного відеоконтенту та аудіоматеріалів в будь-який час і в будь-якому місці. Споживачі все
           частіше відмовляються від традиційних кабельних та супутникових послуг на користь медіа-сервісів. Це ставить
@@ -158,15 +150,17 @@
       </section>
     </main>
 
-    <footer>
-      <a href="/">
-        <svg height="40" width="60">
-          <use href="./img/icons.svg#logo"></use></svg
-        >Melon TV
-      </a>
-      <a href="./card.html"> Business card</a>
+    <footer class="footer service-footer">
+      <div class="nav-container">
+        <a href="/" class="nav-logo link">
+          <svg height="40" width="60">
+            <use href="./img/icons.svg#logo"></use></svg
+          >Melon TV
+        </a>
+        <a href="./card.html" class="link business-card-link"> Business card</a>
+      </div>
 
-      <form>
+      <form class="feedback-form">
         <label>
           Email
           <input type="email" name="email" required />
@@ -186,32 +180,37 @@
         </label>
 
         <div>
-          Your education
-          <label>
-            Engineer
-            <input type="checkbox" name="education" value="Engineer" checked />
-          </label>
-          <label>
-            Educator
-            <input type="checkbox" name="education" value="educator" />
-          </label>
-          <label>
-            Doctor
-            <input type="checkbox" name="education" value="doctor" />
-          </label>
+          <p class="education-label">Your education</p>
+          <div class="education-options">
+            <label>
+              Engineer
+              <input type="checkbox" name="education" value="Engineer" checked />
+            </label>
+            <label>
+              Educator
+              <input type="checkbox" name="education" value="educator" />
+            </label>
+            <label>
+              Doctor
+              <input type="checkbox" name="education" value="doctor" />
+            </label>
+          </div>
         </div>
-        <textarea name="message" placeholder="Enter message" cols="30" rows="10"></textarea>
+        <textarea name="message" placeholder="Enter message" cols="30" rows="4"></textarea>
 
-        <label>
-          I agree with the processing of information
-          <input type="checkbox" name="agree" value="yes" required />
+        <label class="agree-label">
+          <input class="agree-input" type="checkbox" name="agree" value="yes" required />
+          <p class="agree-text">I agree with the processing of information</p>
         </label>
-        <button type="submit">Send</button>
+        <button type="submit" class="submit-form-btn">Send</button>
       </form>
 
       <address>
-        <p>Phone: <a href="tel:0989551921">0989551921</a></p>
-        <p>Email: <a href="mailto:olegkovalets1112003@gmail.com">olegkovalets1112003@gmail.com</a></p>
+        <p>Phone: <a href="tel:0989551921" class="link address-link">0989551921</a></p>
+        <p>
+          Email:
+          <a href="mailto:olegkovalets1112003@gmail.com" class="link address-link">olegkovalets1112003@gmail.com</a>
+        </p>
         <p>Kyiv, Ukraine</p>
         <p>Oleh Kovalets</p>
       </address>
