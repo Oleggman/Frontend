@@ -22,6 +22,8 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -262,4 +264,86 @@ address > p:not(:last-child) {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+/**
+  |============================
+  | Subsriptions
+  |============================
+*/
+
+.subscriptions {
+  padding: 40px 120px;
+  margin: 0 auto;
+}
+
+.subs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.sub-item {
+  width: 280px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #b11c1c 0%, rgba(60, 5, 95, 0.57) 100%);
+  padding-top: 16px;
+}
+
+.sub-title {
+  margin-bottom: 20px;
+  padding: 6px 0;
+
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  background-color: #bdbdbd;
+}
+
+.sub-feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 20px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.sub-info {
+  margin: 40px 0;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 20px;
+}
+
+.sub-info p {
+  font-size: 16px;
+  padding: 6px;
+}
+
+.purchase-btn {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: #000;
+  font-size: 20px;
+  padding: 12px 16px;
+  color: #fff;
+  cursor: pointer;
+
+  transition: background 200ms, color 200ms;
+}
+
+.purchase-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.price-underlined {
+  text-decoration: line-through;
+  margin-right: 8px;
 }
