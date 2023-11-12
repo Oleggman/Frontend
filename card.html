@@ -30,6 +30,11 @@
     </header>
 
     <main>
+      <form class="numbers-form">
+        <input type="text" name="numbers" placeholder="Enter numbers" required min="1" />
+        <button type="submit">Submit</button>
+      </form>
+
       <section class="section" id="greeting">
         <h2 class="title">Вступ</h2>
         <p class="section-info">
@@ -215,5 +220,11 @@
         <p>Oleh Kovalets</p>
       </address>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal"></div>
+    </div>
+
+    <script src="./js/card.js"></script>
   </body>
 </html>
