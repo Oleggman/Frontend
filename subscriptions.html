@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <a href="/">
+    <header class="header">
+      <a href="/" class="nav-logo link">
         <svg height="40" width="60">
-          <use href="./img/icons.svg#logo"></use></svg
-        >Melon TV
+          <use href="./img/icons.svg#logo"></use>
+        </svg>
+        <span>Melon TV</span>
       </a>
       <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./movies.html">All movies</a></li>
-          <li><a href="">Favorites</a></li>
-          <li><a href="./subscriptions.html">Subscriptions</a></li>
-          <li><a href="">Log in</a></li>
+        <ul class="nav-list">
+          <li><a href="./index.html" class="link nav-link">Home</a></li>
+          <li><a href="./movies.html" class="link nav-link">All movies</a></li>
+          <li><a href="" class="link nav-link">Favorites</a></li>
+          <li><a href="./subscriptions.html" class="active link nav-link">Subscriptions</a></li>
+          <li><a href="" class="link nav-link">Log in</a></li>
         </ul>
       </nav>
     </header>
@@ -215,17 +220,20 @@
       </section>
     </main>
 
-    <footer>
-      <a href="/">
+    <footer class="footer">
+      <a href="/" class="nav-logo link">
         <svg height="40" width="60">
           <use href="./img/icons.svg#logo"></use></svg
         >Melon TV
       </a>
-      <a href="./card.html"> Business card</a>
+      <a href="./card.html" class="link business-card-link"> Business card</a>
 
       <address>
-        <p>Phone: <a href="tel:0989551921">0989551921</a></p>
-        <p>Email: <a href="mailto:olegkovalets1112003@gmail.com">olegkovalets1112003@gmail.com</a></p>
+        <p>Phone: <a href="tel:0989551921" class="link address-link">0989551921</a></p>
+        <p>
+          Email:
+          <a href="mailto:olegkovalets1112003@gmail.com" class="link address-link">olegkovalets1112003@gmail.com</a>
+        </p>
         <p>Kyiv, Ukraine</p>
         <p>Oleh Kovalets</p>
       </address>
